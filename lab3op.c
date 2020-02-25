@@ -47,7 +47,7 @@ void main()
 	scanf_s("%c", &x);
 	scanf_s("%c", &b);
 	if (!(b >= 'a' && b <= 'z' || b >= 'A' && b <= 'Z')) {
-		printf_s("Error symbol");
+		printf_s("I've changed this string");
 		return 0;
 	}
 
