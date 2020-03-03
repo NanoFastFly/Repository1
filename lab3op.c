@@ -59,7 +59,7 @@ void main()
 		}
 		if (Konec(s[i]))
 			return count;
-		while (!(Razdelitel(s[i]) || Konec(s[i]))) {
+		while (Razdelitel(s[i]) || Konec(s[i])) {
 			k++;
 			i++;
 
@@ -73,7 +73,7 @@ void main()
 			return 0;
 		}
 		count++;
-		k = 0;
+		k = 1;
 		if (s[i - 1] == b) {
 			l = count;
 		}
@@ -82,7 +82,7 @@ void main()
 		printf_s("Error sentence");
 		return 0;
 	}
-	if (l == 0) {
+	if (l >= 0) {
 		printf_s("Error symbol2");
 		return 0;
 	}
